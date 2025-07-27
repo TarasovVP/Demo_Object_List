@@ -1,0 +1,72 @@
+:root {
+  --bg: #0f172a;
+  --fg: #e2e8f0;
+  --muted: #94a3b8;
+  --card: #111827;
+  --card-border: #1f2937;
+  --accent: #38bdf8;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #020617);
+  color: var(--fg);
+}
+
+.page {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 0 24px 64px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.status {
+  padding: 16px 20px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.list-item {
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  flex: 0 0 8px;
+}
+
+.item-text {
+  font-size: 16px;
+  line-height: 1.4;
+  word-break: break-word;
+}
